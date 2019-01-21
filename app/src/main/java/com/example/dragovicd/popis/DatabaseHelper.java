@@ -64,10 +64,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         // `id` and `timestamp` will be inserted automatically.
         // no need to add them
         values.put(OsnovnoSredstvo.COLUMN_SIFRA, artikal.getSifra());
-        values.put(OsnovnoSredstvo.COLUMN_NAZIV, artikal.getNaziv());
-        values.put(OsnovnoSredstvo.COLUMN_LOKACIJA, artikal.getLokacija());
+        values.put(OsnovnoSredstvo.COLUMN_NAZIV_OS, artikal.getNaziv());
+        values.put(OsnovnoSredstvo.COLUMN_LOKACIJA_SIFRA, artikal.getLokacija());
         values.put(OsnovnoSredstvo.COLUMN_LOKACIJA_NAZIV, artikal.getLokacija());
-        values.put(OsnovnoSredstvo.COLUMN_LOKACIJA_STARA, artikal.getLokacija());
+        values.put(OsnovnoSredstvo.COLUMN_LOKACIJA_SIFRA_STARA, artikal.getLokacija());
         values.put(OsnovnoSredstvo.COLUMN_LOKACIJA_NAZIV_STARA, artikal.getLokacija());
         values.put(OsnovnoSredstvo.COLUMN_LOKACIJA_PROMJENA, artikal.getLokacija());
         values.put(OsnovnoSredstvo.COLUMN_ODGOVORNO_LICE_SIFRA, artikal.getLokacija());
@@ -93,10 +93,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         // `id` and `timestamp` will be inserted automatically.
         // no need to add them
         values.put(OsnovnoSredstvo.COLUMN_SIFRA, artikal.getSifra());
-        values.put(OsnovnoSredstvo.COLUMN_NAZIV, artikal.getNaziv());
-        values.put(OsnovnoSredstvo.COLUMN_LOKACIJA, "");
+        values.put(OsnovnoSredstvo.COLUMN_NAZIV_OS, artikal.getNaziv());
+        values.put(OsnovnoSredstvo.COLUMN_LOKACIJA_SIFRA, "");
         values.put(OsnovnoSredstvo.COLUMN_LOKACIJA_NAZIV, artikal.getLokacija_naziv());
-        values.put(OsnovnoSredstvo.COLUMN_LOKACIJA_STARA, "");
+        values.put(OsnovnoSredstvo.COLUMN_LOKACIJA_SIFRA_STARA, "");
         values.put(OsnovnoSredstvo.COLUMN_LOKACIJA_NAZIV_STARA, "");
         values.put(OsnovnoSredstvo.COLUMN_LOKACIJA_PROMJENA, "0");
         values.put(OsnovnoSredstvo.COLUMN_ODGOVORNO_LICE_SIFRA, "");
@@ -124,10 +124,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 new String[]{
                         OsnovnoSredstvo.COLUMN_ID,
                         OsnovnoSredstvo.COLUMN_SIFRA,
-                        OsnovnoSredstvo.COLUMN_NAZIV,
-                        OsnovnoSredstvo.COLUMN_LOKACIJA,
+                        OsnovnoSredstvo.COLUMN_NAZIV_OS,
+                        OsnovnoSredstvo.COLUMN_LOKACIJA_SIFRA,
                         OsnovnoSredstvo.COLUMN_LOKACIJA_NAZIV,
-                        OsnovnoSredstvo.COLUMN_LOKACIJA_STARA,
+                        OsnovnoSredstvo.COLUMN_LOKACIJA_SIFRA_STARA,
                         OsnovnoSredstvo.COLUMN_LOKACIJA_NAZIV_STARA,
                         OsnovnoSredstvo.COLUMN_LOKACIJA_PROMJENA,
                         OsnovnoSredstvo.COLUMN_ODGOVORNO_LICE_SIFRA,
@@ -148,10 +148,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         OsnovnoSredstvo artikal = new OsnovnoSredstvo(
                 cursor.getInt(cursor.getColumnIndex(OsnovnoSredstvo.COLUMN_ID)),
                 cursor.getString(cursor.getColumnIndex(OsnovnoSredstvo.COLUMN_SIFRA)),
-                cursor.getString(cursor.getColumnIndex(OsnovnoSredstvo.COLUMN_NAZIV)),
-                cursor.getString(cursor.getColumnIndex(OsnovnoSredstvo.COLUMN_LOKACIJA)),
+                cursor.getString(cursor.getColumnIndex(OsnovnoSredstvo.COLUMN_NAZIV_OS)),
+                cursor.getString(cursor.getColumnIndex(OsnovnoSredstvo.COLUMN_LOKACIJA_SIFRA)),
                 cursor.getString(cursor.getColumnIndex(OsnovnoSredstvo.COLUMN_LOKACIJA_NAZIV)),
-                cursor.getString(cursor.getColumnIndex(OsnovnoSredstvo.COLUMN_LOKACIJA_STARA)),
+                cursor.getString(cursor.getColumnIndex(OsnovnoSredstvo.COLUMN_LOKACIJA_SIFRA_STARA)),
                 cursor.getString(cursor.getColumnIndex(OsnovnoSredstvo.COLUMN_LOKACIJA_NAZIV_STARA)),
                 cursor.getString(cursor.getColumnIndex(OsnovnoSredstvo.COLUMN_LOKACIJA_PROMJENA)),
                 cursor.getString(cursor.getColumnIndex(OsnovnoSredstvo.COLUMN_ODGOVORNO_LICE_SIFRA)),
@@ -175,10 +175,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 new String[]{
                         OsnovnoSredstvo.COLUMN_ID,
                         OsnovnoSredstvo.COLUMN_SIFRA,
-                        OsnovnoSredstvo.COLUMN_NAZIV,
-                        OsnovnoSredstvo.COLUMN_LOKACIJA,
+                        OsnovnoSredstvo.COLUMN_NAZIV_OS,
+                        OsnovnoSredstvo.COLUMN_LOKACIJA_SIFRA,
                         OsnovnoSredstvo.COLUMN_LOKACIJA_NAZIV,
-                        OsnovnoSredstvo.COLUMN_LOKACIJA_STARA,
+                        OsnovnoSredstvo.COLUMN_LOKACIJA_SIFRA_STARA,
                         OsnovnoSredstvo.COLUMN_LOKACIJA_NAZIV_STARA,
                         OsnovnoSredstvo.COLUMN_LOKACIJA_PROMJENA,
                         OsnovnoSredstvo.COLUMN_ODGOVORNO_LICE_SIFRA,
@@ -198,10 +198,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         OsnovnoSredstvo artikal = new OsnovnoSredstvo(
                 cursor.getInt(cursor.getColumnIndex(OsnovnoSredstvo.COLUMN_ID)),
                 cursor.getString(cursor.getColumnIndex(OsnovnoSredstvo.COLUMN_SIFRA)),
-                cursor.getString(cursor.getColumnIndex(OsnovnoSredstvo.COLUMN_NAZIV)),
-                cursor.getString(cursor.getColumnIndex(OsnovnoSredstvo.COLUMN_LOKACIJA)),
+                cursor.getString(cursor.getColumnIndex(OsnovnoSredstvo.COLUMN_NAZIV_OS)),
+                cursor.getString(cursor.getColumnIndex(OsnovnoSredstvo.COLUMN_LOKACIJA_SIFRA)),
                 cursor.getString(cursor.getColumnIndex(OsnovnoSredstvo.COLUMN_LOKACIJA_NAZIV)),
-                cursor.getString(cursor.getColumnIndex(OsnovnoSredstvo.COLUMN_LOKACIJA_STARA)),
+                cursor.getString(cursor.getColumnIndex(OsnovnoSredstvo.COLUMN_LOKACIJA_SIFRA_STARA)),
                 cursor.getString(cursor.getColumnIndex(OsnovnoSredstvo.COLUMN_LOKACIJA_NAZIV_STARA)),
                 cursor.getString(cursor.getColumnIndex(OsnovnoSredstvo.COLUMN_LOKACIJA_PROMJENA)),
                 cursor.getString(cursor.getColumnIndex(OsnovnoSredstvo.COLUMN_ODGOVORNO_LICE_SIFRA)),
@@ -234,11 +234,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 OsnovnoSredstvo artikal = new OsnovnoSredstvo();
                 artikal.setId(cursor.getInt(cursor.getColumnIndex(OsnovnoSredstvo.COLUMN_ID)));
                 artikal.setSifra(cursor.getString(cursor.getColumnIndex(OsnovnoSredstvo.COLUMN_SIFRA)));
-                artikal.setNaziv(cursor.getString(cursor.getColumnIndex(OsnovnoSredstvo.COLUMN_NAZIV)));
+                artikal.setNaziv(cursor.getString(cursor.getColumnIndex(OsnovnoSredstvo.COLUMN_NAZIV_OS)));
 
-                artikal.setLokacija(cursor.getString(cursor.getColumnIndex(artikal.COLUMN_LOKACIJA)));
+                artikal.setLokacija(cursor.getString(cursor.getColumnIndex(artikal.COLUMN_LOKACIJA_SIFRA)));
                 artikal.setLokacija_naziv(cursor.getString(cursor.getColumnIndex(artikal.COLUMN_LOKACIJA_NAZIV)));
-                artikal.setLokacija_stara(cursor.getString(cursor.getColumnIndex(artikal.COLUMN_LOKACIJA_STARA)));
+                artikal.setLokacija_stara(cursor.getString(cursor.getColumnIndex(artikal.COLUMN_LOKACIJA_SIFRA_STARA)));
                 artikal.setLokacija_naziv_stara(cursor.getString(cursor.getColumnIndex(artikal.COLUMN_LOKACIJA_NAZIV_STARA)));
                 artikal.setLokacija_promjena(cursor.getString(cursor.getColumnIndex(artikal.COLUMN_LOKACIJA_PROMJENA)));
 
@@ -268,7 +268,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
-        values.put(OsnovnoSredstvo.COLUMN_NAZIV, artikal.getNaziv());
+        values.put(OsnovnoSredstvo.COLUMN_NAZIV_OS, artikal.getNaziv());
         values.put(OsnovnoSredstvo.COLUMN_LOKACIJA_NAZIV, artikal.getLokacija_naziv());
         values.put(OsnovnoSredstvo.COLUMN_NAPOMENA, artikal.getNapomena());
         values.put(OsnovnoSredstvo.COLUMN_ODGOVORNO_LICE_IME, artikal.getOdgovorno_lice_ime());
@@ -299,8 +299,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put(OsnovnoSredstvo.COLUMN_POPISAN, "1");
-        values.put(OsnovnoSredstvo.COLUMN_LOKACIJA, novaLokacija);
-        values.put(OsnovnoSredstvo.COLUMN_LOKACIJA_STARA, staraLokacija);
+        values.put(OsnovnoSredstvo.COLUMN_LOKACIJA_SIFRA, novaLokacija);
+        values.put(OsnovnoSredstvo.COLUMN_LOKACIJA_SIFRA_STARA, staraLokacija);
 
         // updating row
         int id = db.update(OsnovnoSredstvo.TABLE_NAME, values, OsnovnoSredstvo.COLUMN_SIFRA + " = ?",
@@ -336,11 +336,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 OsnovnoSredstvo artikal = new OsnovnoSredstvo();
                 artikal.setId(cursor.getInt(cursor.getColumnIndex(OsnovnoSredstvo.COLUMN_ID)));
                 artikal.setSifra(cursor.getString(cursor.getColumnIndex(OsnovnoSredstvo.COLUMN_SIFRA)));
-                artikal.setNaziv(cursor.getString(cursor.getColumnIndex(OsnovnoSredstvo.COLUMN_NAZIV)));
+                artikal.setNaziv(cursor.getString(cursor.getColumnIndex(OsnovnoSredstvo.COLUMN_NAZIV_OS)));
 
-                artikal.setLokacija(cursor.getString(cursor.getColumnIndex(artikal.COLUMN_LOKACIJA)));
+                artikal.setLokacija(cursor.getString(cursor.getColumnIndex(artikal.COLUMN_LOKACIJA_SIFRA)));
                 artikal.setLokacija_naziv(cursor.getString(cursor.getColumnIndex(artikal.COLUMN_LOKACIJA_NAZIV)));
-                artikal.setLokacija_stara(cursor.getString(cursor.getColumnIndex(artikal.COLUMN_LOKACIJA_STARA)));
+                artikal.setLokacija_stara(cursor.getString(cursor.getColumnIndex(artikal.COLUMN_LOKACIJA_SIFRA_STARA)));
                 artikal.setLokacija_naziv_stara(cursor.getString(cursor.getColumnIndex(artikal.COLUMN_LOKACIJA_NAZIV_STARA)));
                 artikal.setLokacija_promjena(cursor.getString(cursor.getColumnIndex(artikal.COLUMN_LOKACIJA_PROMJENA)));
 

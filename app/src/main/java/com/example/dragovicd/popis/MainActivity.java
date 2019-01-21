@@ -91,10 +91,6 @@ public class MainActivity extends AppCompatActivity {
         ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.BLUETOOTH_ADMIN}, PERMISSION_REQUEST_CODE);
         ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.VIBRATE}, PERMISSION_REQUEST_CODE);
 
-
-
-
-
             File fldPopis = new File(extStorageDirectory + f_popis);
             fldPopis.mkdir();
 
@@ -106,9 +102,6 @@ public class MainActivity extends AppCompatActivity {
 
             File fldPopisImages= new File(extStorageDirectory + f_popis_images);
             fldPopisImages.mkdir();
-
-
-
 
     }
 
@@ -209,8 +202,6 @@ public class MainActivity extends AppCompatActivity {
 
         itemArrayAdapter = new ItemArrayAdapter(getApplicationContext(), R.layout.item_layout);
 
-
-
         File f = new File(extStorageDirectory + f_popis_import + file_name_import);
         InputStream inputStream_folder = null;
 
@@ -234,11 +225,46 @@ public class MainActivity extends AppCompatActivity {
             progressBar.setMax(scoreList.size());
             i = 0;
 
+            final String[] sifra = {""};
+            final String[] naziv_os = {""};
+            final String[] lokacija_naziv = {""};
+            final String[] odgovorno_lice_ime = {""};
+
             Thread thread = new Thread(new Runnable() {
                 public void run() {
                     for (String[] scoreData:scoreList) {
 
-                        OsnovnoSredstvo artikal = new OsnovnoSredstvo(0,scoreData[0],scoreData[1], "", scoreData[2],"0","0","0","0",scoreData[3],"0","0","0","0","0","");
+
+                        if(scoreData[0]==""){
+                            sifra[0] = "";
+                        }else{
+                            sifra[0] =scoreData[0];
+                        }
+
+
+                        if(scoreData[1]==""){
+                            naziv_os[0] = "";
+                        }else{
+                            naziv_os[0] =scoreData[1];
+                        }
+
+
+                        if(scoreData[2]==""){
+                            lokacija_naziv[0] = "";
+                        }else{
+                            lokacija_naziv[0] =scoreData[2];
+                        }
+
+                        if(scoreData[3] ==""){
+                            odgovorno_lice_ime[0] = "";
+                        }else{
+                            odgovorno_lice_ime[0] =scoreData[3];
+                        }
+
+
+
+
+                        OsnovnoSredstvo artikal = new OsnovnoSredstvo(0, sifra[0], naziv_os[0], "", lokacija_naziv[0],"0","0","0","0", odgovorno_lice_ime[0],"0","0","0","0","0","");
                         db.insertArtikal(artikal);
 
                         //Try to sleep the thread for 20 milliseconds
@@ -322,7 +348,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    //Read json from URL
     public  void readFromJSON_URL(View v){
         JsonParser process = new JsonParser();
         process.execute();

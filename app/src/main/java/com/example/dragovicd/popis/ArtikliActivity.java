@@ -118,6 +118,8 @@ public class ArtikliActivity extends AppCompatActivity  {
 
                         if((item.getLokacija_naziv()).equals(osnovnoSredstvoSifraBk)){
                             result = 3;
+                        }else if((item.getOdgovorno_lice_ime()).equals(osnovnoSredstvoSifraBk)){
+                            result = 5;
                         }else if((item.getSifra()).equals(osnovnoSredstvoSifraBk)){
                             sifraArtikla = item.getSifra();
                             odjelNaziv = item.getLokacija_naziv();
@@ -220,7 +222,7 @@ public class ArtikliActivity extends AppCompatActivity  {
         });
     }
 
-    public void filtrirajAuto(MaterialSearchView.OnQueryTextListener view, final String lokacija) {
+    public void filtrirajAuto(MaterialSearchView.OnQueryTextListener view, final String lokacija , final String odgovorno_lice) {
 
         filter_text = lokacija;
         osnovnaSredstva = readDatabaseAllArtikli();

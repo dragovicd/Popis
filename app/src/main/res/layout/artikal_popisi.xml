@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popup_element"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="390dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="Popis artikla"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="19sp" />
+
+            <EditText
+                android:id="@+id/eteSifraArtikla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/eteSifraArtikla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/eteKomentarArtikla"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:layout_marginTop="5dp"
+                android:text="MultiAutoCompleteTextView" />
+
+            <Spinner
+                android:id="@+id/StanjeArtikla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_popisi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/eteSifraArtikla"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/roundedcorners"
+                    android:text="Popiši"
+                    android:textColor="@android:color/background_light" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/btn_zatvori"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/eteSifraArtikla"
+                    android:layout_alignTop="@+id/btn_popisi"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@drawable/roundedcorners"
+                    android:text="Zatvori"
+                    android:textColor="@android:color/background_light" />
+
+                <Button
+                    android:id="@+id/btn_zatvori2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/eteSifraArtikla"
+                    android:layout_alignTop="@+id/btn_popisi"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/roundedcorners"
+                    android:text="Zatvori"
+                    android:textColor="@android:color/background_light" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

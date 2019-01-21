@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<artikli>
+    <artikal>
+        <id>1233</id>
+        <sifra>Mike</sifra>
+        <naziv>Development</naziv>
+        <lokacija>Kancelarija</lokacija>
+        <slika>slika</slika>
+        <popisano>ne</popisano>
+    </artikal>
+    <artikal>
+        <id>1233</id>
+        <sifra>Mike</sifra>
+        <naziv>Development</naziv>
+        <lokacija>Kancelarija</lokacija>
+        <slika>slika</slika>
+        <popisano>ne</popisano>
+    </artikal>
+    <artikal>
+        <id>1233</id>
+        <sifra>Mike</sifra>
+        <naziv>Development</naziv>
+        <lokacija>Kancelarija</lokacija>
+        <slika>slika</slika>
+        <popisano>ne</popisano>
+    </artikal>
+    <artikal>
+        <id>1233</id>
+        <sifra>Mike</sifra>
+        <naziv>Development</naziv>
+        <lokacija>Kancelarija</lokacija>
+        <slika>slika</slika>
+        <popisano>ne</popisano>
+    </artikal>
+    <artikal>
+        <id>1233</id>
+        <sifra>Mike</sifra>
+        <naziv>Development</naziv>
+        <lokacija>Kancelarija</lokacija>
+        <slika>slika</slika>
+        <popisano>ne</popisano>
+    </artikal>
+</artikli>

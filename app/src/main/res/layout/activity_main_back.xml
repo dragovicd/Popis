@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:minHeight="20dp"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <Button
+        android:id="@+id/btnArtikli2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnUvoz2"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimary"
+        android:onClick="goToArtikliAllList"
+        android:text="@string/popis_artikala"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnPopisBezFiltera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnArtikli2"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimary"
+        android:onClick="goToArtikliDodavanje"
+        android:text="@string/dodavanje_artikla"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnUvoz2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimary"
+        android:includeFontPadding="true"
+        android:onClick="readCsvFromFolder"
+        android:text="@string/uvoz"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+
+    <Button
+        android:id="@+id/barcodeScaner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnPopisBezFiltera"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimary"
+        android:onClick="goToBarkod"
+        android:text="@string/popis_artikli_barkod"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnIzvoz2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/barcodeScaner"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimary"
+        android:onClick="exportCSV"
+        android:text="@string/izvoz"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/brrecourds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progressBar2"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

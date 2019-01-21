@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <Button
+        android:id="@+id/btnBlueM"
+        android:text="@string/B_Open"
+         />
+
+
+    <item
+        android:id="@+id/btnSetM"
+        android:title="@string/B_Select"
+        />
+
+    <item
+        android:id="@+id/btnConnectM"
+        android:title="@string/B_Connect"
+        />
+
+
+
+
+    <item
+        android:id="@+id/btnSendContentM"
+        android:title="@string/B_Send"
+        />
+
+    <item
+        android:id="@+id/btnStartScanM"
+        android:title="@string/B_SendList"
+        />
+
+
+
+    <item
+        android:id="@+id/btnStopM"
+        android:title="@string/B_Close"
+         />
+
+    <item
+        android:id="@+id/btnClearM"
+        android:title="@string/B_Clear"
+        />
+
+
+
+
+
+    <item
+        android:id="@+id/btnBlueM"
+        android:title="@string/B_Open"
+        />
+
+
+
+
+
+</menu>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+        <EditText
+            android:id="@+id/eteSifraArtikla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:ems="10"
+            android:hint="Naziv"
+            android:inputType="textPersonName"
+            android:textColorHint="#6f6f6f" />
+
+        <EditText
+            android:id="@+id/eteOdgovornoLice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:ems="10"
+            android:hint="Odgovirno lice"
+            android:inputType="textPersonName"
+            android:textColorHint="#6f6f6f" />
+
+        <EditText
+            android:id="@+id/eteLokacijaArtikla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/colorPrimary"
+
+            android:ems="10"
+            android:hint="Lokacija"
+            android:inputType="textPersonName"
+            android:textColorHint="#6f6f6f" />
+
+        <EditText
+            android:id="@+id/eteNapomenaArtikla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:ems="10"
+            android:hint="Komentar"
+            android:inputType="textPersonName"
+            android:textColorHint="#6f6f6f" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSpasi"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/btnPonisti"
+                android:layout_marginLeft="45dp"
+                android:layout_marginEnd="26dp"
+                android:background="@drawable/roundedcorners"
+                android:onClick="updateArtikal"
+                android:text="Snimi"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnPonisti"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="45dp"
+                android:background="@drawable/roundedcorners"
+                android:onClick="goToArtikliLista"
+                android:text="Poništi"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -186,7 +186,7 @@ public class ArtikliActivity extends AppCompatActivity  {
                         message = "Proizvod nema u evidenciji " + osnovnoSredstvoSifraBk;
                         dodajArtikal( this, noviProizvod);
                     }else if(result == 3){
-                        filtrirajAuto(this, osnovnoSredstvoSifraBk);
+                        //filtrirajAuto(this, osnovnoSredstvoSifraBk);
                     }
 
 

@@ -10,12 +10,12 @@ public class OsnovnoSredstvo extends ArrayList<CharSequence> {
     //Create table Query
     public static final String COLUMN_ID = "id";
     public static final String COLUMN_SIFRA= "sifra";
-    public static final String COLUMN_NAZIV= "naziv";
+    public static final String COLUMN_NAZIV_OS= "naziv";
 
-    public static final String COLUMN_LOKACIJA= "lokacija";
+    public static final String COLUMN_LOKACIJA_SIFRA= "lokacija";
     public static final String COLUMN_LOKACIJA_NAZIV= "lokacija_naziv";
 
-    public static final String COLUMN_LOKACIJA_STARA= "lokacija_stara";
+    public static final String COLUMN_LOKACIJA_SIFRA_STARA= "lokacija_stara";
     public static final String COLUMN_LOKACIJA_NAZIV_STARA= "lokacija_stara_naziv";
 
     public static final String COLUMN_LOKACIJA_PROMJENA= "lokacija_promjena";
@@ -38,10 +38,10 @@ public class OsnovnoSredstvo extends ArrayList<CharSequence> {
             "CREATE TABLE " + TABLE_NAME + "("
                     + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
                     + COLUMN_SIFRA + " TEXT,"
-                    + COLUMN_NAZIV + " TEXT,"
-                    + COLUMN_LOKACIJA + " TEXT,"
+                    + COLUMN_NAZIV_OS + " TEXT,"
+                    + COLUMN_LOKACIJA_SIFRA + " TEXT,"
                     + COLUMN_LOKACIJA_NAZIV + " TEXT,"
-                    + COLUMN_LOKACIJA_STARA + " TEXT,"
+                    + COLUMN_LOKACIJA_SIFRA_STARA + " TEXT,"
                     + COLUMN_LOKACIJA_NAZIV_STARA + " TEXT,"
                     + COLUMN_LOKACIJA_PROMJENA + " TEXT,"
                     + COLUMN_ODGOVORNO_LICE_SIFRA + " TEXT,"

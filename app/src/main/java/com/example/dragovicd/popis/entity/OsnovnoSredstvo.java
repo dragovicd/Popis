@@ -166,7 +166,7 @@ public class OsnovnoSredstvo extends ArrayList<CharSequence> {
     }
 
     public void setOdgovorno_lice_sifra_stara(String odgovorno_lice_sifra_stara) {
-        this.odgovorno_lice_sifra = odgovorno_lice_sifra;
+        this.odgovorno_lice_sifra_stara = odgovorno_lice_sifra_stara;
     }
 
     public String getOdgovorno_lice_ime_stara() {
@@ -174,7 +174,7 @@ public class OsnovnoSredstvo extends ArrayList<CharSequence> {
     }
 
     public void setOdgovorno_lice_ime_stara(String odgovorno_lice_ime_stara) {
-        this.odgovorno_lice_ime_stara = odgovorno_lice_ime;
+        this.odgovorno_lice_ime_stara = odgovorno_lice_ime_stara;
     }
 
 
